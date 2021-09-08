@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.2 on win32)" generated="20210907 17:50:57.350" rpa="false">
-<suite id="s1" name="Testcase" source="C:\Doc\Class Robot\homework2\testcase">
-<suite id="s1-s1" name="Login" source="C:\Doc\Class Robot\homework2\testcase\login.robot">
+<robot generator="Robot 3.2.2 (Python 3.9.2 on win32)" generated="20210908 18:01:31.709" rpa="false">
+<suite id="s1" name="Testcase" source="C:\Doc\homework2\testcase">
+<suite id="s1-s1" name="Login" source="C:\Doc\homework2\testcase\login.robot">
 <test id="s1-s1-t1" name="Login with Username and Password">
 <kw name="Go to login page" type="setup">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -10,14 +10,14 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20210907 17:50:58.243" level="INFO">Opening browser 'chrome' to base url 'http://www.doppio-tech.com:8080/login'.</msg>
-<status status="PASS" starttime="20210907 17:50:58.243" endtime="20210907 17:50:59.678"></status>
+<msg timestamp="20210908 18:01:32.233" level="INFO">Opening browser 'chrome' to base url 'http://www.doppio-tech.com:8080/login'.</msg>
+<status status="PASS" starttime="20210908 18:01:32.233" endtime="20210908 18:01:36.582"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210907 17:50:59.679" endtime="20210907 17:50:59.814"></status>
+<status status="PASS" starttime="20210908 18:01:36.582" endtime="20210908 18:01:36.728"></status>
 </kw>
-<status status="PASS" starttime="20210907 17:50:58.242" endtime="20210907 17:50:59.814"></status>
+<status status="PASS" starttime="20210908 18:01:32.232" endtime="20210908 18:01:36.728"></status>
 </kw>
 <kw name="Login to Jenkins">
 <arguments>
@@ -31,7 +31,7 @@
 <arguments>
 <arg>${User}</arg>
 </arguments>
-<status status="PASS" starttime="20210907 17:50:59.815" endtime="20210907 17:50:59.846"></status>
+<status status="PASS" starttime="20210908 18:01:36.731" endtime="20210908 18:01:36.780"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -39,15 +39,15 @@
 <arg>name=j_username</arg>
 <arg>${Username}</arg>
 </arguments>
-<msg timestamp="20210907 17:50:59.847" level="INFO">Typing text 'dummy' into text field 'name=j_username'.</msg>
-<status status="PASS" starttime="20210907 17:50:59.846" endtime="20210907 17:50:59.900"></status>
+<msg timestamp="20210908 18:01:36.780" level="INFO">Typing text 'dummy' into text field 'name=j_username'.</msg>
+<status status="PASS" starttime="20210908 18:01:36.780" endtime="20210908 18:01:36.884"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${Pass}</arg>
 </arguments>
-<status status="PASS" starttime="20210907 17:50:59.900" endtime="20210907 17:50:59.920"></status>
+<status status="PASS" starttime="20210908 18:01:36.884" endtime="20210908 18:01:36.920"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -55,16 +55,16 @@
 <arg>name=j_password</arg>
 <arg>${Password}</arg>
 </arguments>
-<msg timestamp="20210907 17:50:59.920" level="INFO">Typing text 'dummy' into text field 'name=j_password'.</msg>
-<status status="PASS" starttime="20210907 17:50:59.920" endtime="20210907 17:50:59.987"></status>
+<msg timestamp="20210908 18:01:36.921" level="INFO">Typing text 'dummy' into text field 'name=j_password'.</msg>
+<status status="PASS" starttime="20210908 18:01:36.921" endtime="20210908 18:01:37.068"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>name=Submit</arg>
 </arguments>
-<msg timestamp="20210907 17:50:59.987" level="INFO">Clicking element 'name=Submit'.</msg>
-<status status="PASS" starttime="20210907 17:50:59.987" endtime="20210907 17:51:00.674"></status>
+<msg timestamp="20210908 18:01:37.069" level="INFO">Clicking element 'name=Submit'.</msg>
+<status status="PASS" starttime="20210908 18:01:37.069" endtime="20210908 18:01:38.429"></status>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
@@ -72,16 +72,16 @@
 <arg>${Locator}</arg>
 <arg>${Text}</arg>
 </arguments>
-<msg timestamp="20210907 17:51:00.675" level="INFO">Verifying element 'xpath=//h1[contains(text(),'Access Denied')]/following-sibling::p  ' contains exact text 'dummy is missing the Overall/Read permission'.</msg>
-<status status="PASS" starttime="20210907 17:51:00.674" endtime="20210907 17:51:00.693"></status>
+<msg timestamp="20210908 18:01:38.430" level="INFO">Verifying element 'xpath=//h1[contains(text(),'Access Denied')]/following-sibling::p  ' contains exact text 'dummy is missing the Overall/Read permission'.</msg>
+<status status="PASS" starttime="20210908 18:01:38.429" endtime="20210908 18:01:38.480"></status>
 </kw>
-<status status="PASS" starttime="20210907 17:50:59.814" endtime="20210907 17:51:00.693"></status>
+<status status="PASS" starttime="20210908 18:01:36.730" endtime="20210908 18:01:38.480"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="teardown">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210907 17:51:00.694" endtime="20210907 17:51:02.931"></status>
+<status status="PASS" starttime="20210908 18:01:38.482" endtime="20210908 18:01:40.751"></status>
 </kw>
-<status status="PASS" starttime="20210907 17:50:58.240" endtime="20210907 17:51:02.932" critical="yes"></status>
+<status status="PASS" starttime="20210908 18:01:32.229" endtime="20210908 18:01:40.752" critical="yes"></status>
 </test>
 <test id="s1-s1-t2" name="Login with Username and Password">
 <kw name="Go to login page" type="setup">
@@ -91,14 +91,14 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20210907 17:51:02.936" level="INFO">Opening browser 'chrome' to base url 'http://www.doppio-tech.com:8080/login'.</msg>
-<status status="PASS" starttime="20210907 17:51:02.935" endtime="20210907 17:51:04.389"></status>
+<msg timestamp="20210908 18:01:40.761" level="INFO">Opening browser 'chrome' to base url 'http://www.doppio-tech.com:8080/login'.</msg>
+<status status="PASS" starttime="20210908 18:01:40.760" endtime="20210908 18:01:42.968"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210907 17:51:04.389" endtime="20210907 17:51:04.530"></status>
+<status status="PASS" starttime="20210908 18:01:42.968" endtime="20210908 18:01:43.129"></status>
 </kw>
-<status status="PASS" starttime="20210907 17:51:02.935" endtime="20210907 17:51:04.531"></status>
+<status status="PASS" starttime="20210908 18:01:40.759" endtime="20210908 18:01:43.129"></status>
 </kw>
 <kw name="Login to Jenkins">
 <arguments>
@@ -112,7 +112,7 @@
 <arguments>
 <arg>${User}</arg>
 </arguments>
-<status status="PASS" starttime="20210907 17:51:04.532" endtime="20210907 17:51:04.558"></status>
+<status status="PASS" starttime="20210908 18:01:43.134" endtime="20210908 18:01:43.192"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -120,15 +120,15 @@
 <arg>name=j_username</arg>
 <arg>${Username}</arg>
 </arguments>
-<msg timestamp="20210907 17:51:04.559" level="INFO">Typing text 'Invalid' into text field 'name=j_username'.</msg>
-<status status="PASS" starttime="20210907 17:51:04.558" endtime="20210907 17:51:04.623"></status>
+<msg timestamp="20210908 18:01:43.193" level="INFO">Typing text 'Invalid' into text field 'name=j_username'.</msg>
+<status status="PASS" starttime="20210908 18:01:43.192" endtime="20210908 18:01:43.287"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${Pass}</arg>
 </arguments>
-<status status="PASS" starttime="20210907 17:51:04.623" endtime="20210907 17:51:04.648"></status>
+<status status="PASS" starttime="20210908 18:01:43.287" endtime="20210908 18:01:43.330"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -136,16 +136,16 @@
 <arg>name=j_password</arg>
 <arg>${Password}</arg>
 </arguments>
-<msg timestamp="20210907 17:51:04.648" level="INFO">Typing text 'dummy' into text field 'name=j_password'.</msg>
-<status status="PASS" starttime="20210907 17:51:04.648" endtime="20210907 17:51:04.707"></status>
+<msg timestamp="20210908 18:01:43.331" level="INFO">Typing text 'dummy' into text field 'name=j_password'.</msg>
+<status status="PASS" starttime="20210908 18:01:43.330" endtime="20210908 18:01:43.456"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>name=Submit</arg>
 </arguments>
-<msg timestamp="20210907 17:51:04.708" level="INFO">Clicking element 'name=Submit'.</msg>
-<status status="PASS" starttime="20210907 17:51:04.707" endtime="20210907 17:51:04.922"></status>
+<msg timestamp="20210908 18:01:43.456" level="INFO">Clicking element 'name=Submit'.</msg>
+<status status="PASS" starttime="20210908 18:01:43.456" endtime="20210908 18:01:43.943"></status>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
@@ -153,20 +153,20 @@
 <arg>${Locator}</arg>
 <arg>${Text}</arg>
 </arguments>
-<msg timestamp="20210907 17:51:04.923" level="INFO">Verifying element 'xpath=//div[@class='alert alert-danger']' contains exact text 'Invalid username or password'.</msg>
-<status status="PASS" starttime="20210907 17:51:04.922" endtime="20210907 17:51:04.947"></status>
+<msg timestamp="20210908 18:01:43.944" level="INFO">Verifying element 'xpath=//div[@class='alert alert-danger']' contains exact text 'Invalid username or password'.</msg>
+<status status="PASS" starttime="20210908 18:01:43.943" endtime="20210908 18:01:43.994"></status>
 </kw>
-<status status="PASS" starttime="20210907 17:51:04.531" endtime="20210907 17:51:04.947"></status>
+<status status="PASS" starttime="20210908 18:01:43.132" endtime="20210908 18:01:43.994"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="teardown">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210907 17:51:04.947" endtime="20210907 17:51:07.160"></status>
+<status status="PASS" starttime="20210908 18:01:43.995" endtime="20210908 18:01:46.268"></status>
 </kw>
-<status status="PASS" starttime="20210907 17:51:02.934" endtime="20210907 17:51:07.161" critical="yes"></status>
+<status status="PASS" starttime="20210908 18:01:40.757" endtime="20210908 18:01:46.269" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20210907 17:50:57.371" endtime="20210907 17:51:07.162"></status>
+<status status="PASS" starttime="20210908 18:01:31.753" endtime="20210908 18:01:46.273"></status>
 </suite>
-<status status="PASS" starttime="20210907 17:50:57.352" endtime="20210907 17:51:07.164"></status>
+<status status="PASS" starttime="20210908 18:01:31.712" endtime="20210908 18:01:46.287"></status>
 </suite>
 <statistics>
 <total>
@@ -181,6 +181,6 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20210907 17:51:02.933" level="WARN">Multiple test cases with name 'Login with Username and Password' executed in test suite 'Testcase.Login'.</msg>
+<msg timestamp="20210908 18:01:40.755" level="WARN">Multiple test cases with name 'Login with Username and Password' executed in test suite 'Testcase.Login'.</msg>
 </errors>
 </robot>

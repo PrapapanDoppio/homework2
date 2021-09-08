@@ -1,11 +1,11 @@
 *** Settings ****
 Library		SeleniumLibrary
 Resource   ../resource/login_page.robot  
-Library    DataDriver    ../testdata/testdata_login.xlsx    sheet_name=testdata_login
+Library    DataDriver    ../testdata/testdata_login.csv    dialect=excel
 
 Test Setup      Go to login page
 Test Teardown   Close Browser
-Test Template   Login to Jenkins 
+Test Template   Login to Jenkins
 
 *** Keywords ***
 Go to login page
@@ -21,8 +21,8 @@ Login to Jenkins
    Click Element  name=Submit
    Element Text Should Be       ${Locator}      ${Text}
 
-
 *** Test Cases ***      
-Login with Username and Password  
+Login with Username and Password
+
 
 

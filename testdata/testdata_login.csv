@@ -1,0 +1,3 @@
+﻿*** test case ***,${Username},${Password},${Locator},${Text}
+Valid Login,dummy,dummy,${message}  ,dummy is missing the Overall/Read permission
+Invalid Login,Invalid,dummy,${error_message},Invalid username or password
